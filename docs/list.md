@@ -1,17 +1,22 @@
----
----
-# 獸圖
+# 檔案列表
 
-[![pages-build-deployment](https://github.com/nickburrows/images/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/nickburrows/images/actions/workflows/pages/pages-build-deployment)
+使用方式:
 
-路徑: `https://dev.tznick.com/images/{foldername}/{foldername_$.ext}`
+```bash
+# 全域安裝
+❯ npm install -g md-file-tree
 
-測試
+# 使用 emoji: `-emoji`, `-e`
+❯ md-file-tree -e
 
-![test](beek/beek_1.jpg)
+
+# 指定輸出到檔案
+❯ md-file-tree > list.md
+
+```
 
 <!-- markdownlint-disable MD033 -->
-<details><summary>檔案列表</summary>
+<details><summary>展開</summary>
 <div>
 
 - 📂 __docs__
@@ -411,4 +416,4 @@
     - 📄 [take\_9.jpg](take/take_9.jpg)
 
 </div>
-</details>
+<details>
