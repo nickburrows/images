@@ -17,9 +17,13 @@
 
 <!-- markdownlint-disable MD033 -->
 <details><summary>展開</summary>
-<div>
 
 - 📂 __docs__
+  - 📄 [Gemfile](Gemfile)
+  - 📄 [\_config.yml](_config.yml)
+  - 📂 __assets__
+    - 📂 __css__
+      - 📄 [main.css](assets/css/main.css)
   - 📂 __beek__
     - 📄 [beek\_1.jpg](beek/beek_1.jpg)
     - 📄 [beek\_2.jpg](beek/beek_2.jpg)
@@ -60,6 +64,8 @@
   - 📂 __gyee__
     - 📄 [gyee\_1.jpg](gyee/gyee_1.jpg)
     - 📄 [gyee\_2.jpg](gyee/gyee_2.jpg)
+  - 📂 __img__
+    - 📄 [folder.svg](img/folder.svg)
   - 📄 [index.md](index.md)
   - 📂 __kc__
     - 📄 [kc\_1.jpg](kc/kc_1.jpg)
@@ -415,5 +421,4 @@
     - 📄 [take\_8.jpg](take/take_8.jpg)
     - 📄 [take\_9.jpg](take/take_9.jpg)
 
-</div>
 <details>
