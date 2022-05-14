@@ -11,6 +11,7 @@
 ![test](beek/beek_1.jpg)
 
 ![folder](img/folder.svg)
+{: .svg-image }
 
 ## List Example
 
