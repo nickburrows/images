@@ -3,3 +3,18 @@
 theme: minimal-mistakes-jekyll
 
 minimal_mistakes_skin: dark
+
+search: true
+
+show_date: true
+date_format: "%Y-%m-%d"
+
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jemoji
+  - jekyll-include-cache
+  - jekyll-remote-theme
