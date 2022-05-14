@@ -12,7 +12,6 @@
 
 <!-- markdownlint-disable MD033 -->
 <details><summary>檔案列表</summary>
-<div>
 
 - 📂 __docs__
   - 📂 __beek__
@@ -410,5 +409,4 @@
     - 📄 [take\_8.jpg](take/take_8.jpg)
     - 📄 [take\_9.jpg](take/take_9.jpg)
 
-</div>
 </details>
