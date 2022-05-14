@@ -4,4 +4,4 @@
 
 測試
 
-![test](img/beek/beek_1.jpg)
+![test](docs/beek/beek_1.jpg)
