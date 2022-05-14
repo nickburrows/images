@@ -12,6 +12,15 @@
 
 ![folder](img/folder.svg)
 
+## List Example
+
+- First item
+- Second item
+- Third item
+  - Indented item
+  - Indented item
+- Fourth item
+
 <!-- markdownlint-disable MD033 -->
 <details><summary>檔案列表</summary>
 
