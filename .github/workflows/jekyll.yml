@@ -13,8 +13,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build the site in the jekyll/builder container
+    - name: Check if secret exists
+      if: github.event_name == 'push'
       run: |
-        docker run \
-        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+        if [ -z "$deploy_key" ]
+        then
+          echo "You do not have a secret named SSH_DEPLOY_KEY.  This means you did not follow the setup instructions carefully.  Please try setting up your repo again with the right secrets."
+          exit 1;
+        fi
+      env:
+       deploy_key: ${{ secrets.SSH_DEPLOY_KEY }}
