@@ -1,33 +1,25 @@
 ---
-layout: home
+permalink: /list/
+title: '檔案列表'
 ---
 
-[![pages-build-deployment](https://github.com/nickburrows/images/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/nickburrows/images/actions/workflows/pages/pages-build-deployment)
+使用方式:
 
-路徑: `https://dev.tznick.com/images/{foldername}/{foldername_$.ext}`
+```bash
+# 全域安裝
+❯ npm install -g md-file-tree
 
-測試
+# 使用 emoji: `-emoji`, `-e`
+❯ md-file-tree -e
 
-![test](beek/beek_1.jpg)
 
-![folder](assets/images/folder.svg)
-{: .svg-image }
+# 指定輸出到檔案
+❯ md-file-tree > list.md
 
-## List Example
+```
 
-- First item
-- Second item
-- Third item
-  - Indented item
-  - Indented item
-- Fourth item
-
-### 檔案列表
-
-<details markdown="1">
-  <summary>
-    Toggle me!
-  </summary>
+<!-- markdownlint-disable MD033 -->
+<details markdown="1"><summary>展開</summary>
 
 - 📂 __docs__
   - 📄 [Gemfile](Gemfile)
@@ -912,4 +904,4 @@ layout: home
     - 📄 [take\_8.jpg](take/take_8.jpg)
     - 📄 [take\_9.jpg](take/take_9.jpg)
 
-</details>
+<details>
