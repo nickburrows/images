@@ -14,10 +14,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - uses: actions/download-artifact@v3
-        with:
-          name: Download logs to file
-          path: artifact
+      - name: Download logs to file
+        uses: actions/download-artifact@v3
 
       - name: Display structure of downloaded files
         run: ls -R
