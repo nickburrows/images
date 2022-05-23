@@ -6,7 +6,7 @@ tags:
   - MacOS
   - editor
 ---
-
+<!-- markdownlint-disable MD031 -->
 ## 前因
 
 因為慣用的文字編輯器為 `Visual Studio Code` ，且在多數時候需要開啟的文件不一定都是 `text` 的純文字檔，但仍需以`VSCode`開啟使用，無論是透過文件資訊修改開啟的應用程式、拖曳至Dock以 `VSCode` 開啟、甚至用 `Automator` 建立一個快速操作的腳本...都仍然不能滿足我的需求（因為還有各種 `.xxxx` 的檔案類型都算是純文字檔），但隨著新的技術之類的這種原因而造成這類的純文字檔越來越多種，一個一個改、每次都要經過一番操作才能用習慣的編輯器來開啟實在太累了，於是再努力一番搜索之後總算找到一些方式來修改MacOS的預設文字編輯器了（對我來說簡直完美，所以要趕快記下來，終於可以跟MacOS的文字編輯器說Bye Bye~）
@@ -15,9 +15,14 @@ tags:
 
 - `Homebrew` 安裝 `duti`
 
+{% if page.content contains "code" %}
+{% include codeHeader.html %}
+
 ```bash
 ❯ brew install duti
 ```
+{: #code-example-1}
+{% endif %}
 
 - 取得 `Visual Studio Code` 的應用程式辨識資訊，等下會使用到
 - 更多關於 [CFBundleIdentifer](https://developer.apple.com/documentation/bundleresources/information_property_list/cfbundleidentifier) 的說明

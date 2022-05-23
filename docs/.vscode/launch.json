@@ -1,0 +1,11 @@
+{
+  "configurations": [
+  {
+    "name": "Jekyll",
+    "request": "attach",
+    "type": "pwa-msedge",
+    "webRoot": "${workspaceFolder}",
+    "preLaunchTask": "jekyll"
+  }
+  ]
+}

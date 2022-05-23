@@ -27,7 +27,7 @@ markdown: kramdown
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: TW
+timezone: Asia/Taipei
 
 include:
   - _pages
@@ -83,3 +83,9 @@ footer:
     - label: 'Instagram'
       icon: 'fab fa-fw fa-instagram'
       url: 'https://instagram.com/'
+head_scripts:
+  - https://code.jquery.com/jquery-3.6.0.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js
+
+footer_scripts:
+  - /assets/js/copyCode.js

@@ -8,6 +8,12 @@
 @import "minimal-mistakes"; // main partials
 @import "minimal-mistakes/prismjs-theme-okaidia";
 
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+p > .material-icons {
+  vertical-align: middle;
+}
+
 .svg-image img {
   width: 25px;
 }
@@ -43,4 +49,158 @@
 // }
 // details summary {
 //     color: $brand-color;
+// }
+.copy-code-button {
+  // position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 14px;
+  // width: 65px;
+  color: #232326;
+  background-color: #7f7f7f;
+  border: 1.25px solid #232326;
+  // border-top-left-radius: 0;
+  // border-top-right-radius: 4px;
+  // border-bottom-right-radius: 0;
+  // border-bottom-left-radius: 4px;
+  border-radius: 4px;
+  white-space: nowrap;
+  // padding: 4px 4px 5px 4px;
+  padding: 0.25rem;
+  margin: 0 0 0 1px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.copy-code-button:hover,
+.copy-code-button:focus,
+.copy-code-button:active,
+.copy-code-button:active:hover {
+  color: #222225;
+  background-color: #b3b3b3;
+  opacity: 0.8;
+}
+
+// * {margin: 0; padding: 0;}
+
+/* modification for button copy */
+.highlight > pre > div{
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.btn-copy{
+  color: #FFF;
+  background-color: #EB3A3A;
+  border: 0;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.btn-copy:hover{
+  background-color: rgba(235, 58, 58, 0.774);
+}
+/* modification for button copy */
+
+// .highlight {
+//   background-color: #333A40;
+//   border-left: 0.25em solid rgba(235, 58, 58, 0.9);
+//   padding: 0 0 1em 1em;
+//   margin: 1em;
+//   overflow-x: auto;
+//   white-space: nowrap;
+// }
+
+// .highlighter-rouge{
+//   background: rgba(235, 58, 58, 0.9);
+//   color: #FFFFFF;
+//   padding: 0.2em;
+//   border-radius: 0.2em;
+// }
+// .highlight table td { padding: 5px; }
+// .highlight table pre { margin: 0; }
+// .highlight, .highlight .w {
+//   color: #fbf1c7;
+//   background-color: #282828;
+// }
+// .highlight .err {
+//   color: #fb4934;
+//   background-color: #282828;
+//   font-weight: bold;
+// }
+// .highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
+//   color: #928374;
+//   font-style: italic;
+// }
+// .highlight .cp {
+//   color: #8ec07c;
+// }
+// .highlight .nt {
+//   color: #fb4934;
+// }
+// .highlight .o, .highlight .ow {
+//   color: #fbf1c7;
+// }
+// .highlight .p, .highlight .pi {
+//   color: #fbf1c7;
+// }
+// .highlight .gi {
+//   color: #b8bb26;
+//   background-color: #282828;
+// }
+// .highlight .gd {
+//   color: #fb4934;
+//   background-color: #282828;
+// }
+// .highlight .gh {
+//   color: #b8bb26;
+//   font-weight: bold;
+// }
+// .highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+//   color: #fb4934;
+// }
+// .highlight .kc {
+//   color: #d3869b;
+// }
+// .highlight .kt {
+//   color: #fabd2f;
+// }
+// .highlight .kd {
+//   color: #fe8019;
+// }
+// .highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+//   color: #b8bb26;
+//   font-style: italic;
+// }
+// .highlight .si {
+//   color: #b8bb26;
+//   font-style: italic;
+// }
+// .highlight .sr {
+//   color: #b8bb26;
+//   font-style: italic;
+// }
+// .highlight .se {
+//   color: #fe8019;
+// }
+// .highlight .nn {
+//   color: #8ec07c;
+// }
+// .highlight .nc {
+//   color: #8ec07c;
+// }
+// .highlight .no {
+//   color: #d3869b;
+// }
+// .highlight .na {
+//   color: #b8bb26;
+// }
+// .highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
+//   color: #d3869b;
+// }
+// .highlight .ss {
+//   color: #83a598;
 // }
