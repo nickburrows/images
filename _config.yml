@@ -1,19 +1,22 @@
+# theme: minimal-mistakes-jekyll
+locale: "zh-TW"
 title: LALALALALALA!!
+title_separator: "|"
+# subtitle: "Version 2.0"
+# name: "Site Name"
 email: nick.github1@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "/images" # the subpath of your site, e.g. /blog
-url: "https://nickburrows.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-locale: "zh-TW"
-twitter_username: ""
-github_username:  nickburrows
+baseurl: "/images" # Site base URL e.g. /blog
+url: "https://nickburrows.github.io" # Site URL
 repository: nickburrows/images
 logo: "/assets/images/favicon-96.png"
+twitter_username: ""
+github_username:  nickburrows
 # theme: jekyll-theme-minimal
-theme: minimal-mistakes-jekyll
-# remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
 minimal_mistakes_skin: dark
 
@@ -21,13 +24,18 @@ search: true
 
 show_date: true
 date_format: "%Y-%m-%d"
+# read_time: true
 
 markdown: kramdown
 
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+paginate_path: /recent/page:num/
 timezone: Asia/Taipei
+
+# Twitter Card
+# twitter:
+#   username: "mmistakes-theme"
 
 include:
   - _pages
@@ -83,6 +91,7 @@ footer:
     - label: 'Instagram'
       icon: 'fab fa-fw fa-instagram'
       url: 'https://instagram.com/'
+
 head_scripts:
   - https://code.jquery.com/jquery-3.6.0.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js
