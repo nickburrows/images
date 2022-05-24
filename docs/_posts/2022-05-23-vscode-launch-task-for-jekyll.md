@@ -39,9 +39,6 @@ tags:
 |
 ```
 
-{% if page.content contains "code" %}
-{% include codeHeader.html %}
-
 ```json
 # .vscode/launch.json
 {
@@ -56,11 +53,6 @@ tags:
   ]
 }
 ```
-{: #vscode-launch-file}
-{% endif %}
-
-{% if page.content contains "code" %}
-{% include codeHeader.html %}
 
 ```json
 # .vscode/tasks.json
@@ -78,7 +70,5 @@ tags:
   ]
 }
 ```
-{: #vscode-tasks-file}
-{% endif %}
 
 新增完成後按下 `F5` 或是從編輯器介面 `執行 >> 偵錯` 在編輯器中的整合式終端機指令將會開始運行。
