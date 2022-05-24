@@ -23,9 +23,3 @@ jobs:
         fi
       env:
        deploy_key: ${{ secrets.SSH_DEPLOY_KEY }}
-
-    - name: Build the site in the jekyll/builder container
-      run: |
-        docker run \
-        -v ${{ github.workspace }}:/srv/jekyll \
-        jekyll/builder:4.2.0 /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
