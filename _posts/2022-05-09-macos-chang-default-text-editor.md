@@ -15,14 +15,10 @@ tags:
 
 - `Homebrew` 安裝 `duti`
 
-{% if page.content contains "code" %}
-{% include codeHeader.html %}
-
 ```bash
 ❯ brew install duti
 ```
 {: #code-example-1}
-{% endif %}
 
 - 取得 `Visual Studio Code` 的應用程式辨識資訊，等下會使用到
 - 更多關於 [CFBundleIdentifer](https://developer.apple.com/documentation/bundleresources/information_property_list/cfbundleidentifier) 的說明
