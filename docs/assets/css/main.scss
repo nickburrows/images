@@ -8,7 +8,22 @@
 @import "minimal-mistakes"; // main partials
 @import "minimal-mistakes/prismjs-theme-okaidia";
 
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+// $base00: #282936;
+// $base01: #3a3c4e;
+// $base02: #4d4f68;
+// $base03: #626483;
+// $base04: #62d6e8;
+// $base05: #e9e9f4;
+// $base06: #f1f2f8;
+// $base07: #f7f7fb;
+// $base08: #ea51b2;
+// $base09: #b45bcf;
+// $base0a: #00f769;
+// $base0b: #ebff87;
+// $base0c: #a1efe4;
+// $base0d: #62d6e8;
+// $base0e: #b45bcf;
+// $base0f: #00f769;
 
 p > .material-icons {
   vertical-align: middle;
@@ -126,106 +141,6 @@ p > .material-icons {
     background-color: rgba(235, 58, 58, 0.774);
   }
 }
-
-// .highlight {
-//   background-color: #333A40;
-//   border-left: 0.25em solid rgba(235, 58, 58, 0.9);
-//   padding: 0 0 1em 1em;
-//   margin: 1em;
-//   overflow-x: auto;
-//   white-space: nowrap;
-// }
-
-// .highlighter-rouge{
-//   background: rgba(235, 58, 58, 0.9);
-//   color: #FFFFFF;
-//   padding: 0.2em;
-//   border-radius: 0.2em;
-// }
-// .highlight table td { padding: 5px; }
-// .highlight table pre { margin: 0; }
-// .highlight, .highlight .w {
-//   color: #fbf1c7;
-//   background-color: #282828;
-// }
-// .highlight .err {
-//   color: #fb4934;
-//   background-color: #282828;
-//   font-weight: bold;
-// }
-// .highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
-//   color: #928374;
-//   font-style: italic;
-// }
-// .highlight .cp {
-//   color: #8ec07c;
-// }
-// .highlight .nt {
-//   color: #fb4934;
-// }
-// .highlight .o, .highlight .ow {
-//   color: #fbf1c7;
-// }
-// .highlight .p, .highlight .pi {
-//   color: #fbf1c7;
-// }
-// .highlight .gi {
-//   color: #b8bb26;
-//   background-color: #282828;
-// }
-// .highlight .gd {
-//   color: #fb4934;
-//   background-color: #282828;
-// }
-// .highlight .gh {
-//   color: #b8bb26;
-//   font-weight: bold;
-// }
-// .highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
-//   color: #fb4934;
-// }
-// .highlight .kc {
-//   color: #d3869b;
-// }
-// .highlight .kt {
-//   color: #fabd2f;
-// }
-// .highlight .kd {
-//   color: #fe8019;
-// }
-// .highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
-//   color: #b8bb26;
-//   font-style: italic;
-// }
-// .highlight .si {
-//   color: #b8bb26;
-//   font-style: italic;
-// }
-// .highlight .sr {
-//   color: #b8bb26;
-//   font-style: italic;
-// }
-// .highlight .se {
-//   color: #fe8019;
-// }
-// .highlight .nn {
-//   color: #8ec07c;
-// }
-// .highlight .nc {
-//   color: #8ec07c;
-// }
-// .highlight .no {
-//   color: #d3869b;
-// }
-// .highlight .na {
-//   color: #b8bb26;
-// }
-// .highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
-//   color: #d3869b;
-// }
-// .highlight .ss {
-//   color: #83a598;
-// }
 
 /* Tooltip container */
 

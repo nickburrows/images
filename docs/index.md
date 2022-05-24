@@ -1,8 +1,11 @@
 ---
 layout: home
 ---
-
 [![pages-build-deployment](https://github.com/nickburrows/images/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/nickburrows/images/actions/workflows/pages/pages-build-deployment)
+
+## Minimal Mistakes - A Jekyll Theme
+
+主題來源: [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/)
 
 路徑: `https://dev.tznick.com/images/{foldername}/{foldername_$.ext}`
 
