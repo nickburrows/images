@@ -58,52 +58,74 @@ p > .material-icons {
   font-size: 13px;
   font-weight: 700;
   line-height: 14px;
+
   // width: 65px;
-  color: #cdcdcd;
-  background-color: #343434;
-  border: 1.25px solid #232326;
+  // color: #cdcdcd;
+  color: #9ca3af;
+  // background-color: #343434;
+  background-color: #21262d;
+  // border: 1.25px solid #232326;
+  border: 1.25px solid rgba(240,246,252,0.1);
+
   // border-top-left-radius: 0;
   // border-top-right-radius: 4px;
   // border-bottom-right-radius: 0;
   // border-bottom-left-radius: 4px;
   border-radius: 4px;
   white-space: nowrap;
+
   // padding: 4px 4px 5px 4px;
   padding: 0.25rem;
   margin: 0 0 0 1px;
   cursor: pointer;
   opacity: 0.6;
+
+  &:hover, &:focus {
+    // color: #222225;
+    color: #fff;
+    // background-color: #b3b3b3;
+    background-color: #30363d;
+    border-color: #8b949e;
+    opacity: 0.8;
+  }
+
+  &:active {
+    // color: #222225;
+    color: #fff;
+    // background-color: #b3b3b3;
+    background-color: #30363d;
+    border-color: #8b949e;
+    opacity: 0.8;
+
+    &:hover {
+    // color: #222225;
+    color: #fff;
+    // background-color: #b3b3b3;
+    background-color: #30363d;
+    border-color: #8b949e;
+    opacity: 0.8;
+    }
+  }
 }
 
-.copy-code-button:hover,
-.copy-code-button:focus,
-.copy-code-button:active,
-.copy-code-button:active:hover {
-  color: #222225;
-  background-color: #b3b3b3;
-  opacity: 0.8;
-}
-
-// * {margin: 0; padding: 0;}
-
-/* modification for button copy */
-.highlight > pre > div{
+.highlight > pre > div {
   position: absolute;
   right: 0;
   display: flex;
   flex-direction: row-reverse;
 }
-.btn-copy{
+
+.btn-copy {
   color: #FFF;
   background-color: #EB3A3A;
   border: 0;
   padding: 5px 10px;
   cursor: pointer;
+
+  &:hover {
+    background-color: rgba(235, 58, 58, 0.774);
+  }
 }
-.btn-copy:hover{
-  background-color: rgba(235, 58, 58, 0.774);
-}
-/* modification for button copy */
 
 // .highlight {
 //   background-color: #333A40;
@@ -204,3 +226,68 @@ p > .material-icons {
 // .highlight .ss {
 //   color: #83a598;
 // }
+
+/* Tooltip container */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+
+  /* If you want dots under the hoverable text */
+
+  .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #555 transparent transparent transparent;
+    }
+
+    &.visible {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  // &:hover .tooltiptext {
+  //   visibility: visible;
+  //   opacity: 1;
+  // }
+}
+
+.highlight {
+  .copy-btn .copy-code-button {
+    margin-right: 0.5rem;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &:hover .copy-btn .copy-code-button {
+    visibility: visible;
+    opacity: 1;
+  }
+}

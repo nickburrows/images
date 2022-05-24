@@ -10,8 +10,6 @@ tags:
 <!-- markdownlint-disable MD031 -->
 ## 原因
 
-複製 <span class="material-icons">content_paste</span>
-
 已經習慣將VS Code作為日常使用的一個工具，常會遇到許多不適用的情況發生，而在執行一些Jekyll專案類型時，會需要在本機端運行 `bundle exec jekyll serve` 來檢視網站或是設定更改後的變化，但是每次都要輸入指令什麼的真的太累人了，找了一下官方的插件庫，有找到一個名為 [Jekyll Run](https://marketplace.visualstudio.com/items?itemName=Dedsec727.jekyll-run) 的擴充程式，但是由於該套件執行指令時判斷的路徑與我實際使用的不符，且無法自定路徑等只能透過另開一個視窗 (工作區) ，並在該工作區新增要運行的主目錄才能正確運行。
 
 於是上網找了一些方法，後來決定使用VS Code內建的debug功能來解決這個問題。
