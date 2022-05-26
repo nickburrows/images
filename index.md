@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: archive
 ---
 [![pages-build-deployment](https://github.com/nickburrows/images/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/nickburrows/images/actions/workflows/pages/pages-build-deployment)
 
